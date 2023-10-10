@@ -1,0 +1,3 @@
+D:\SENECA\SEMESTER 3\assign2\NodejsWebApp2\obj\Debug\NodejsWebApp2.njsproj.AssemblyReference.cache
+D:\SENECA\SEMESTER 3\assign2\NodejsWebApp2\obj\Debug\NodejsWebApp2.njsproj.CoreCompileInputs.cache
+D:\SENECA\SEMESTER 3\assign2\NodejsWebApp2\bin\Microsoft.NodejsTools.WebRole.dll
