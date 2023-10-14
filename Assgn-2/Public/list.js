@@ -1,9 +1,7 @@
 // list.js
 
-const perPage = 25; // Number of users to display per page
-let currentPage = 1; // Current page
+const perPage = 25; // Number of users to display
 const userList = document.getElementById('userList');
-const pagination = document.getElementById('pagination');
 
 async function getUsers() {
     const response = await fetch('./fakeUsers.json');
@@ -33,14 +31,6 @@ function renderUserList(users) {
  
 }
 
-function changePage(page) {
-    currentPage = page;
-    getUsers().then((users) => {
-        renderUserList(users);
-    });
-}
-
-// Initialize the list view with the first page
 getUsers().then((users) => {
     renderUserList(users);
 });
