@@ -1,9 +1,9 @@
 const Sequelize = require("sequelize");
 
-const PGHOST = "yourneondb";
-const PGDATABASE = "yourdb";
-const PGUSER = "yourusername";
-const PGPASSWORD = "your passord";
+const PGHOST = "ep-lingering-sound-37866534.us-east-2.aws.neon.tech";
+const PGDATABASE = "WEB";
+const PGUSER = "shayer5";
+const PGPASSWORD = "WAlFybt7Cid1";
 
 // set up sequelize to point to our postgres database
 let sequelize = new Sequelize(PGDATABASE, PGUSER, PGPASSWORD, {
