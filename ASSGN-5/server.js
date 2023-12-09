@@ -18,6 +18,7 @@ app.set("views", __dirname + "/views");
 
 // Set the JSON middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // ROUTE HANDLING
 app.use(pageRoutes);
