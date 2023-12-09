@@ -1,4 +1,5 @@
 const express = require("express");
+const clientSessions = require("client-sessions");
 const pageRoutes = require("./routes/page.routes");
 const apiRoutes = require("./routes/api.routes");
 const { connect, sync } = require("./db");
@@ -19,6 +20,20 @@ app.set("views", __dirname + "/views");
 // Set the JSON middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(
+    clientSessions({
+        cookieName: "session",
+        secret: "SECRETCODE",
+        duration: 2 * 60 * 100000,
+        activeDuration: 1000 * 60,
+    })
+);
+
+app.use((req, res, next) => {
+    console.log(req.session);
+    next();
+});
 
 // ROUTE HANDLING
 app.use(pageRoutes);

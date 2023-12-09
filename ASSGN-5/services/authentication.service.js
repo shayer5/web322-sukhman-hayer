@@ -3,9 +3,9 @@ class AuthenticationService {
         const authentication = { isAutheticated: false };
 
     if (username === "admin" && password === "password") {
-        return (authentication.isAuthenticated = true);
+        authentication.isAuthenticated = true;
     }
-        return authentication;
+         return authentication;
     }
 }
 
