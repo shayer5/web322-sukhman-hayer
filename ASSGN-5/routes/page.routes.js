@@ -9,7 +9,7 @@ pageRoutes.get("/", (req, res) => {
 
 pageRoutes.post("/", (req, res) => {
   const authentication = AuthenticationService.authenticate(null, null);
-  if (authentication.isAutheticated) res.redirect(`/list`);
+  if (authentication.isAutheticated) res.redirect(`/users`);
   else res.redirect("/");
 });
 

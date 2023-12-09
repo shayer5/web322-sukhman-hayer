@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 
 const PGHOST = "ep-lingering-sound-37866534.us-east-2.aws.neon.tech";
-const PGDATABASE = "WEB";
+const PGDATABASE = "Web322";
 const PGUSER = "shayer5";
 const PGPASSWORD = "WAlFybt7Cid1";
 
@@ -26,6 +26,8 @@ const User = sequelize.define("users", {
   email: Sequelize.TEXT,
   password: Sequelize.TEXT,
 });
+
+
 
 async function connect() {
   try {
